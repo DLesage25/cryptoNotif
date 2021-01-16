@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "cryptonotif-executor",
+    "name": "cryptonotif",
+    "region": "us-east-2"
+  },
+  "api": {
+    "id": "32wqc70lyg"
+  }
+}
