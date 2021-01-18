@@ -1,3 +1,3 @@
-import server from './dist/main';
+const server = require('./dist/main');
 
-exports.alertapi = server;
+module.exports = server;
