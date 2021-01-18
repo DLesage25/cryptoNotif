@@ -2,7 +2,7 @@
     "name": "cryptonotif",
     "version": "1.0.0",
     "description": "",
-    "main": "dist/main.js",
+    "main": "index.js",
     "scripts": {
         "build": "webpack --mode production --progress",
         "start": "node dist/main.js"
