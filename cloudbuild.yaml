@@ -1,0 +1,14 @@
+steps:
+    - name: 'gcr.io/cloud-builders/npm'
+      args: ['install']
+      dir: './'
+    - name: 'gcr.io/cloud-builders/gcloud'
+      args:
+          - functions
+          - deploy
+          - alertapi
+          - --entry-point=index.js
+          - --trigger-http
+          - --runtime=nodejs12
+          - --region=us-central1
+          - --allow-unauthenticated
