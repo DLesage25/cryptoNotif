@@ -2,25 +2,20 @@
     "name": "cryptonotif",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "dist/main.js",
     "scripts": {
         "build": "webpack --mode production --progress",
-        "start": "node dist/index.js",
-        "init-claudia": "claudia generate-serverless-express-proxy --express-module dist/index",
-        "create-api": "claudia create --handler lambda.handler --deploy-proxy-api --region us-east-2",
-        "update-api": "claudia update"
+        "start": "node dist/main.js"
     },
     "author": "me@daniellesage.com",
     "license": "ISC",
     "dependencies": {
-        "aws-serverless-express": "^3.4.0",
         "axios": "^0.21.1",
         "babel-polyfill": "^6.26.0",
         "express": "^4.17.1"
     },
     "devDependencies": {
         "@babel/polyfill": "^7.12.1",
-        "claudia": "^5.12.0",
         "clean-webpack-plugin": "^3.0.0",
         "compression-webpack-plugin": "^7.1.2",
         "dotenv": "^8.2.0",

@@ -40,7 +40,7 @@ module.exports = (env, argv) => {
         target: 'node',
         output: {
             path: path.join(__dirname, 'dist'),
-            filename: 'index.js',
+            filename: 'main.js',
         },
         resolve: {
             extensions: ['.js', '.ts'],

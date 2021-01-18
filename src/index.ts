@@ -3,11 +3,11 @@
 import express from 'express';
 import routes from './routes';
 
-const app = express();
+const server = express();
 
-app.use(express.json());
+server.use(express.json());
 
-app.map = function (a: any, route: any) {
+server.map = function (a: any, route: any) {
     route = route || '';
     for (var key in a) {
         switch (typeof a[key]) {
@@ -21,8 +21,8 @@ app.map = function (a: any, route: any) {
     }
 };
 
-app.map(routes);
+server.map(routes);
 
-app.listen(3000, () => console.log('listening - 3000'));
+// server.listen(3000, () => console.log('listening - 3000'));
 
-export default app;
+export default server;
